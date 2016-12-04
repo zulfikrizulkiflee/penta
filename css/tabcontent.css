@@ -1,0 +1,104 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+#contentstb
+{
+	margin-left:0px;
+	margin:0 0 0 0;
+	border:0 solid gray; 
+	width:800px;
+	height:800px;
+	margin-bottom: 1em; 
+	padding: 5px;
+	overflow:auto;
+}
+
+.tabcontent{
+text-transform: capitalize;
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+}
+}
+
+
+.invertedshiftdown{
+margin:0 0 0 0px;
+padding: 3px 0 0 0;
+width:550px;
+border-top: 5px solid #000000; /*Red color theme*/
+background: transparent;
+voice-family: "\"}\"";
+voice-family: inherit;
+list-style-type: none;
+}
+
+.invertedshiftdown ul{
+margin:0;
+margin-left: 100px; /*margin between first menu item and left browser edge*/
+padding: 0;
+list-style: none;
+}
+
+.invertedshiftdown li{
+display: inline;
+margin: 0 2px 0 0;
+padding: 0;
+text-transform:uppercase;
+}
+
+.invertedshiftdown li a.selected{ /*selected main tab style */
+background-color: #A2B8F7; /*Red color theme #D10000 */
+/*background:url(../images/bg_menu_biru.png);*/
+border-bottom-color: white;
+}
+
+.invertedshiftdown a{
+float: left;
+display: block;
+font: bold 11px Arial;
+color: black;
+text-decoration: none;
+margin: 0 1px 0 0; /*Margin between each menu item*/
+padding: 5px 10px 9px 10px; /*Padding within each menu item*/
+background-color: white; /*Default menu color*/
+}
+
+.invertedshiftdown a:hover{
+/*background-color: #D10000; /*Red color theme #D10000*/
+background-color:#D10000;
+padding-top: 9px; /*Flip default padding-top value with padding-bottom */
+padding-bottom: 5px; /*Flip default padding-bottom value with padding-top*/
+color: white;
+}
+
+.invertedshiftdown .current a{ /** currently selected menu item **/
+background-color: #D10000; /*Red color theme #D10000*/
+padding-top: 9px; /*Flip default padding-top value with padding-bottom */
+padding-bottom: 5px; /*Flip default padding-bottom value with padding-top*/
+color: white;
+}
+
+#myform{ /*CSS for sample search box. Remove if desired */
+float: right;
+margin: 0;
+margin-top: 2px;
+padding: 0;
+}
+
+#myform .textinput{
+width: 190px;
+border: 1px solid gray;
+}
+
+#myform .submit{
+font: normal 12px Verdana;
+min-height: 22px;
+border: 1px solid #BEC2CD;
+background-color: black;
+color: white;
+}
+
+
+

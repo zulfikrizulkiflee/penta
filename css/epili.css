@@ -1,0 +1,306 @@
+@import url('menu.css');
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+* {
+    font-size: 14px;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+p a {
+    color: blue;
+}
+
+a div,
+a img {
+    border: none;
+}
+
+.align-right {
+    text-align: right;
+}
+
+input {
+    outline: none;
+}
+
+select {
+    font-size: 11px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 3px;
+}
+
+#headerbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 135px;
+    z-index: -1;
+    background: url('../images/contact-purpleheader.png') repeat-x;
+    background-size: contain;
+    width: 100%;
+}
+
+#header {
+    /*background: url('../images/square-abstract.jpg') no-repeat fixed;*/
+    background-size: cover;
+    height: 95px;
+    width: 100%;
+}
+
+#logo {
+    width: 260px;
+    height: 80px;
+    background: url(../images/logo.svg) no-repeat;
+    background-size: contain;
+    float: left;
+    margin: 20px 0px 34px;
+}
+
+#lambang {
+    height: 78px;
+    width: 150px;
+    /*background: url('../images/lambang.png') no-repeat;*/
+    float: left;
+    margin: 10px 15px;
+}
+
+#whole-page-wrapper {
+    width: 970px;
+    min-width: 970px;
+    margin: 0 auto;
+}
+
+#top-login-area {
+    float: right;
+    margin: 12px 0px;
+}
+
+#top-login-area input[type="text"],
+#top-login-area input[type="password"] {
+    border: none;
+    font-size: 10px;
+    padding: 3px;
+}
+
+#top-login-area .login-label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#top-login-area td {
+    padding: 3px 5px;
+}
+
+.inputButton,
+.red-button {
+    /*
+    -moz-box-shadow: inset 0px 1px 0px 0px #E91D62;
+-webkit-box-shadow: inset 0px 1px 0px 0px #E91D62;
+box-shadow: inset 0px 1px 0px 0px #E91D62;
+*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #E91D62), color-stop(1, #E91D62));
+    background: -moz-linear-gradient(top, #E91D62 5%, #E91D62 100%);
+    background: -webkit-linear-gradient(top, #E91D62 5%, #E91D62 100%);
+    background: -o-linear-gradient(top, #E91D62 5%, #E91D62 100%);
+    background: -ms-linear-gradient(top, #E91D62 5%, #E91D62 100%);
+    background: linear-gradient(to bottom, #E91D62 5%, #E91D62 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#E91D62', endColorstr='#E91D62', GradientType=0);
+    background-color: #E91D62;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    /*    border-radius:100px;*/
+    border: none;
+    /*    1px solid #942911;*/
+    display: inline-block;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+    line-height: 15px;
+}
+
+.inputButton:hover,
+.red-button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+    background: -moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: -webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: -o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: -ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b', GradientType=0);
+    background-color: #bc3315;
+}
+
+.red-button:active {
+    position: relative;
+    top: 1px;
+}
+
+#public-top-menu {
+    clear: both;
+    font-size: 11px;
+    line-height: 23px;
+}
+
+#public-top-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#public-top-menu a:hover {
+    text-decoration: underline;
+}
+
+#public-top-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+    z-index: 2;
+}
+
+#public-top-menu ul li.portal-menu-link {
+    display: none;
+    padding: 0 10px;
+}
+
+li#menu-sistem-label {
+    background-color: #E7E7E7;
+    padding: 15px 10px 12px 10px !important;
+    border-top: 1px solid #FFF;
+}
+
+#menu-sistem-container {
+    margin-top: 7px;
+}
+
+#menu-sistem-bg {
+    position: absolute;
+    background-color: #E7E7E7;
+    border-bottom: 1px solid #CCCBCB;
+    top: 133px;
+    right: 0;
+    left: 0;
+    height: 31px;
+    z-index: -1;
+}
+
+#main-content {
+    display: block;
+    background: transparent;
+    min-height: 500px;
+    clear: both;
+    /*	padding: 0 8px;*/
+    font-size: 11px;
+}
+
+#main-content .inputInput {
+    border: 1px solid #D1D1D1;
+    padding: 5px;
+}
+
+#main-content .inputButton:disabled {
+    background: #D6D6D6 !important;
+    border: none !important;
+    text-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#main-content .tableContent {
+    width: 100%;
+    border: 1px solid #3b0c81;
+}
+
+#main-content .tableContent th,
+#main-content .tableContent td {
+    padding: 5px;
+}
+
+#main-content .tableContent th {
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffe0b5;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffe0b5;
+    box-shadow: inset 0px 1px 0px 0px #ffe0b5;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3b0c81), color-stop(1, #3b0c81));
+    background: -moz-linear-gradient(top, #3b0c81 5%, #3b0c81 100%);
+    background: -webkit-linear-gradient(top, #3b0c81 5%, #3b0c81 100%);
+    background: -o-linear-gradient(top, #3b0c81 5%, #3b0c81 100%);
+    background: -ms-linear-gradient(top, #3b0c81 5%, #3b0c81 100%);
+    background: linear-gradient(to bottom, #3b0c81 5%, #3b0c81 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#a50fc7', endColorstr='#a50fc7', GradientType=0);
+    background-color: #a50fc7;
+    border-left: 1px solid #3b0c81;
+    border-bottom: 1px solid #3b0c81;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 11px;
+    text-decoration: none;
+    /*    text-shadow: 0px 1px 0px #8f7f24;*/
+    width: 100%;
+    text-align: left;
+}
+
+.tableContent th.listingHead {
+    background: #c4b6d9 !important;
+    width: auto !important;
+}
+
+.tableContent td.contentButtonFooter {
+    text-align: right;
+}
+
+.tableContent tr:nth-child(odd) {
+    background-color: #FFF8F2;
+}
+
+.tableContent tr:nth-child(even) {
+    background-color: #FFFDFC;
+}
+
+
+/*.tableContent tr:hover{ background-color: #fff6cc; }*/
+
+#footer {
+    clear: both;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 9px !important;
+    color: #AAA;
+    line-height: 1.7em;
+}
+
+#SasaranPemeriksaanMengikutPasukan {
+    color: white;
+    display: none;
+}
+
+#bottom {
+    font-size: 9px;
+}
+
+.flcReportPaging input[style*="color:#999999"] {
+    color: white !important;
+    background: #3B0C81;
+}
+
+.listingHead {
+    color: #3B0C81 !important;
+}
+
+.listingHead label[style*="text-decoration:underline"] {
+    text-decoration: none !important;
+}
